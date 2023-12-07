@@ -221,6 +221,15 @@ p{
     padding:15px;
 }
 
+.thumbnail{
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    background-color: var(--clr-accent);
+    box-shadow: 10px 10px var(--clr-accent-dark);
+    border-radius: 50px;
+    padding:15px;
+    margin: auto;
+}
+
 
 .portfolio__img:hover,
 .portfolio__item:focus{
