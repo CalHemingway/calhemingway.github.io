@@ -96,6 +96,8 @@ p{
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
+    letter-spacing: .1em;
+    line-height: 3em;
 }
 
 
