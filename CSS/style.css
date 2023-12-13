@@ -187,6 +187,16 @@ p{
     padding: 10px;
 }
 
+.section__subtitle--portfolio {
+    background: var(--clr-accent-dark);
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 2em;
+
+}
+
 
 /* Intro Section */
 
