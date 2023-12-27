@@ -221,6 +221,7 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-column-gap: 2em;
     grid-row-gap: 2em;
+    margin-bottom: 5em;
 }
 
 .portfolio a{
@@ -230,12 +231,33 @@ p{
     text-decoration:none;
 }
 
+.portfolio__img--kate,
+.portfolio__img--richard,
+.portfolio__img--GitHub,
 .portfolio__img{
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-    background-color: var(--clr-accent);
-    box-shadow: 10px 10px var(--clr-accent-dark);
     border-radius: 50px;
     padding:15px;
+}
+
+.portfolio__img{
+    background-color: var(--clr-accent);
+    box-shadow: 10px 10px var(--clr-accent-dark);
+}
+
+.portfolio__img--richard{
+    background-color: #5BCEFA;
+    box-shadow: 10px 10px #3a829e ;
+}
+
+.portfolio__img--GitHub{
+    background-color: #b133ff;
+    box-shadow: 10px 10px #802b7b ;
+}
+
+.portfolio__img--kate{
+    background-color: #ff81ca;
+    box-shadow: 10px 10px #a4439e ;
 }
 
 .video__box{
@@ -271,6 +293,9 @@ p{
 
 .game__img:hover,
 .portfolio__img:hover,
+.portfolio__img--richard:hover,
+.portfolio__img--kate:hover,
+.portfolio__img--GitHub:hover,
 .portfolio__item:focus{
     transform: scale(1.1);
 }
