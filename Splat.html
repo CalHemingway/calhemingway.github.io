@@ -2,60 +2,114 @@
 <html lang = "en">
     <header>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <!--Webpage Title-->
         <title>Cal Hemingway: Developer Portfolio</title>
+
+        <!--Stylesheets-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="style.css">
     </header>
+
     <body>
-        <header class = "header">
-            <div class="logo" id="logo-header">
-                <a href ="index.html" class =>
-                    <img src="IMG/MM_Logo_White.png" class ="logo__image">
+        <!--Main Site Content-->
+        <header class = "header" id = "top_header">
+            <!--Site Header-->
+            <div class = "header__div">
+                <a href ="index.html">
+                    <!--<img src="#" class ="logo__image">-->
+                    <h1 class = "header__title">Cal Hemingway</h1>
                 </a>
+                <div class = "header__subdiv">
+                    <a href ="#page-intro-section" class ="header__link">
+                        <h2 class = "header__subtitle">Intro</h2>
+                    </a>
+                    <a href ="https://store.steampowered.com/app/2680370/Splat/" class ="header__link">
+                        <h2 class = "header__subtitle" stlye = "margin-left: 1.5em; margin-right: 1.5em;">Splat! on Steam</h2>
+                    </a>
+                </div>
             </div>
         </header>
-
-        <!--About Me-->
-        <section class="project__title" id="about">
-            <h2 class="section__title section__title--about">Splat!</h2>
-            <p class ="section__subtitle section__subtitle--about">A simple Arcade-Style Game</p>
-            <div class="about-me__body">
-                <p>
-                    Splat! is an upcoming Arcade-Style game where you fall down a series of increasingly difficult levels, avoiding obstacles and using powerups to reach the bottom before time runs out.
-                </p>
-                <p>
-                    Developed for PC, Splat! is the second game I am releasing to Steam, with part-time development beginning at the start of November and finishing/releasing in Mid-December, this game was developed with a very short turnaround. 
-                </p>
-                <p>
-                    The game was developed with Unreal Engine 5.2.1 (later upgraded to 5.3.2) and uses my CommonUI Menu Pack developed for the purpose of saving myself time in future projects. All assets in the game (aside from sound effects and music) were created by myself soley for use in this game.
-                </p>
-                <p> Splat! is now available to wishlist on Steam!</p> <p>-  Please note: Splat!'s promotional materials are still placeholders and will be subject to change.</p>
-            </div>
+        <!--About Me Section-->
+        <section class ="Page__Intro" id = "page-intro-section" style = "margin-top: 75px;">
+            <div>
+                <h2 class = section__title--page>Splat</h2>
+                <p class = "section__text">Splat! is a third person gravity based game where you fall through a series of increasingly complex levels, trying to reach the end without going Splat!</p>
+                <p class = "section__text">Developed for PC, Splat! is the second game I am releasing to Steam, with part-time development beginning at the start of November and finishing/releasing in Mid-January, this game was developed with a very short turnaround.</p>
+                <p class = "section__text">The game was developed with Unreal Engine 5.2.1 (later upgraded to 5.3.2) and uses my CommonUI Menu Pack developed for the purpose of saving myself time in future projects. All assets in the game (aside from sound effects and music) were created by myself soley for use in this game. </p>
         </section>
 
-        <h2 class ="section__title">Splat! On Steam</h2>
-        <a href = https://store.steampowered.com/app/2680370/Splat/" class = "portfolio__item">
-            <img src ="IMG/Steam Preview.png" class = "game__img">
-        </a>
-
-        <h2 class="section__title">Screenshots</h2>
-        <!--My Projects-->
-        <section class="my-work" id="work">
-            <div class ="portfolio">
-                    <img src="IMG/Screenshots/Splat 1.png" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/Splat 2.png" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/Splat 3.png" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/Splat 4.png" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/Splat 5.png" alt ="" class = "screenshot">
+        <section class="portfolio" id="ui-section">
+            <div class = "section__background"></div>
+                <h2 class = section__title>User Interface (Built with Common UI)</h2>
+                <div class ="portfolio-div">
+                    <a href ="IMG/Splat Screenshots/Pause_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Pause_1.jpg" alt ="" class ="portfolio__img"><p>Pause</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Main_Menu_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Main_Menu_1.jpg" alt ="" class ="portfolio__img"><p>Main Menu</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Level_Select_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Level_Select_1.jpg" alt ="" class ="portfolio__img"><p>Level Select</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_1.jpg" alt ="" class ="portfolio__img"><p>Options</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_2.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_2.jpg"" alt ="" class ="portfolio__img"><p>Choosing Resolution</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" alt ="" class ="portfolio__img"><p>Confirming Resolution/Window Mode Changes</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_3.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_3.jpg"" alt ="" class ="portfolio__img"><p>Windowed Fullscreen Disables Resolution</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quality_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quality_1.jpg" alt ="" class ="portfolio__img"><p>Quality Settings</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quality_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quality_2.jpg" alt ="" class ="portfolio__img"><p>Allows for Custom Settings</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quit_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quit_1.jpg" alt ="" class ="portfolio__img"><p>Quit when on the Title Screen</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quit_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quit_2.jpg" alt ="" class ="portfolio__img"><p>Quit when in Game</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/HUD_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/HUD_1.jpg" alt ="" class ="portfolio__img"><p>Gameplay HUD & Countdown Timer</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Tutorial_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Tutorial_1.jpg" alt ="" class ="portfolio__img"><p>1st Tutorial</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Tutorial_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Tutorial_2.jpg" alt ="" class ="portfolio__img"><p>2nd Tutorial</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Tutorial_3.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Tutorial_3.jpg" alt ="" class ="portfolio__img"><p>3rd Tutorial</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Tutorial_4.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Tutorial_4.jpg" alt ="" class ="portfolio__img"><p>4th Tutorial</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Control_PopUp_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Control_PopUp_1.jpg" alt ="" class ="portfolio__img"><p>Controls Pop Up</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Control_PopUp_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Control_PopUp_2.jpg" alt ="" class ="portfolio__img"><p>Controls Pop Up (Controller)</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Level_Complete_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Level_Complete_1.jpg" alt ="" class ="portfolio__img"><p>Level Completed Interface</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Level_Fail_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Level_Fail_1.jpg" alt ="" class ="portfolio__img"><p>Level Failed Interface</p>
+                    </a>
+                </div>
             </div>
         </section>
-
         <!--Footer-->
         <footer class ="footer">
-             <ul class="socials"> 
+            <ul class="socials"> 
                 <li class = "social__item">
                     <a class="social_link" href = "mailto:CallumHemingway2002@Outlook.com">
                         Email Me

@@ -2,70 +2,72 @@
 <html lang = "en">
     <header>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <!--Webpage Title-->
         <title>Cal Hemingway: Developer Portfolio</title>
+
+        <!--Stylesheets-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="style.css">
     </header>
+
     <body>
-        <header class = "header">
-            <div class="logo" id="logo-header">
-                <a href ="index.html" class =>
-                    <img src="IMG/MM_Logo_White.png" class ="logo__image">
+        <!--Main Site Content-->
+        <header class = "header" id = "top_header">
+            <!--Site Header-->
+            <div class = "header__div">
+                <a href ="index.html">
+                    <!--<img src="#" class ="logo__image">-->
+                    <h1 class = "header__title">Cal Hemingway</h1>
                 </a>
+                <div class = "header__subdiv">
+                    <a href ="#page-intro-section" class ="header__link">
+                        <h2 class = "header__subtitle">Intro</h2>
+                    </a>
+                    <a href ="https://store.steampowered.com/app/2251500/Crunch_Time_Beat_the_Clock/" class ="header__link">
+                        <h2 class = "header__subtitle" stlye = "margin-left: 1.5em; margin-right: 1.5em;">Crunch Time! Beat the Clock on Steam</h2>
+                    </a>
+                </div>
             </div>
         </header>
-
-        <!--About Me-->
-        <section class="project__title" id="about">
-            <h2 class="section__title section__title--about">Crunch Time! Beat the Clock</h2>
-            <p class ="section__subtitle section__subtitle--about">The first game I released on Steam</p>
-            <div class="about-me__body">
-                <p>
-                    Crunch Time! Beat the Clock is the first game I ever released to Steam. Since then it has garnered over 21,400 acquisitions.
-                </p>
-                <p>
-                    Developed for PC, Crunch Time! was developed for the experimentation section of my University dissertation, wherein I researched the current state of independent game development and the implications that current trends may have on the industry.
-                    It was my first time using Unreal Engine (beyond creating singular mechanics) as choosing an engine I was less familiar with provided a stronger "baseline" for what a beginner may experience when attempting game development for the first time.
-                    It consists of 5 levels, Cutscenes, 2 "Boss Fights" and a tutorial level. 
-                </p>
-                <p>
-                    The game was developed with Unreal Engine 5.1 within the span of 3 months (though 95% of development took place within a single month), all assets were created by myself (barring sounds and animations) and the game was released in March of 2023. Since releasing it Unreal Engine has become my primary game engine of choice.
-                </p>
-                <p> Crunch Time! Is available on Steam, Itch.io, GameJolt, and the Microsoft store.</p>
-                <p> Also the first guy to ever review it was role-playing as a bird, to this day I have *no* idea how to process that...</p>
+        <!--About Me Section-->
+        <section class ="Page__Intro" id = "page-intro-section" style = "margin-top: 75px;">
+            <div>
+                <h2 class = section__title--page>Crunch Time! Beat the Clock</h2>
+                <p class = "section__text">Crunch Time! Beat the Clock is the first game I ever released to Steam. Since then it has garnered over 21,400 acquisitions.</p>
+                <p class = "section__text">Developed for PC, Crunch Time! was developed for the experimentation section of my University dissertation, wherein I researched the current state of independent game development and the implications that current trends may have on the industry. It was my first time using Unreal Engine (beyond creating singular mechanics) as choosing an engine I was less familiar with provided a stronger "baseline" for what a beginner may experience when attempting game development for the first time. It consists of 5 levels, Cutscenes, 2 "Boss Fights" and a tutorial level.</p>
+                <p class = "section__text">The game was developed with Unreal Engine 5.1 within the span of 3 months (though 95% of development took place within a single month), all assets were created by myself (barring sounds and animations) and the game was released in March of 2023. Since releasing it Unreal Engine has become my primary game engine of choice. </p>
+                <p class = "section__text">Crunch Time! Is available on Steam, Itch.io, GameJolt, and the Microsoft store.</p>
+                <p class = "section__text">Also the first guy to ever review it was role-playing as a bird, to this day I have *no* idea how to process that...</p>
             </div>
         </section>
 
-        <h2 class ="section__title">Crunch Time! Beat the Clock On Steam</h2>
-        <a href = https://store.steampowered.com/app/2251500/Crunch_Time_Beat_the_Clock/?beta=1" class = "portfolio__item">
-            <img src ="IMG/Crunch_Time_Logo.png" class = "game__img">
-        </a>
-
-        <h2 class = "section__title">Videos</h2>
-        <center>
-            <video title = "Pygame Demonstration" width="640" height="480" controls class ="video__box">
-              <source src="IMG/Crunch Time Clip.mp4" type="video/mp4">
-            </video>
-        </center>
-
-        <h2 class="section__title">Screenshots</h2>
-        <!--My Projects-->
-        <section class="my-work" id="work">
-            <div class ="portfolio">
-                    <img src="IMG/Screenshots/CT 1.jpg" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/CT 2.jpg" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/CT 3.jpg" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/CT 4.jpg" alt ="" class = "screenshot">
-                    <img src="IMG/Screenshots/CT 5.jpg" alt ="" class = "screenshot">
+        <section class="portfolio" id="ui-section">
+            <div class = "section__background"></div>
+                <h2 class = section__title>Screenshots</h2>
+                <div class ="portfolio-div">
+                    <a href ="IMG/CT Screenshots/CT 1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/CT Screenshots/CT 1.jpg" alt ="" class ="portfolio__img"><p>Screenshot 1</p>
+                    </a>
+                    <a href ="IMG/CT Screenshots/CT 2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/CT Screenshots/CT 2.jpg" alt ="" class ="portfolio__img"><p>Screenshot 2</p>
+                    </a>
+                    <a href ="IMG/CT Screenshots/CT 3.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/CT Screenshots/CT 3.jpg" alt ="" class ="portfolio__img"><p>Screenshot 3</p>
+                    </a>
+                    <a href ="IMG/CT Screenshots/CT 4.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/CT Screenshots/CT 4.jpg" alt ="" class ="portfolio__img"><p>Screenshot 4</p>
+                    </a>
+                    <a href ="IMG/CT Screenshots/CT 5.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/CT Screenshots/CT 5.jpg" alt ="" class ="portfolio__img"><p>Screenshot 5</p>
+                    </a>
+                </div>
             </div>
         </section>
-
         <!--Footer-->
         <footer class ="footer">
-             <ul class="socials"> 
+            <ul class="socials"> 
                 <li class = "social__item">
                     <a class="social_link" href = "mailto:CallumHemingway2002@Outlook.com">
                         Email Me
