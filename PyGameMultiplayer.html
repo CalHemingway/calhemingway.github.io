@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <!--Webpage Title-->
+        <title>Cal Hemingway: Developer Portfolio</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <body>
+        <!--Main Site Content-->
+        <header class = "header" id = "top_header">
+            <!--Site Header-->
+            <div class = "header__div">
+                <a href ="index.html">
+                    <!--<img src="#" class ="logo__image">-->
+                    <h1 class = "header__title">Cal Hemingway</h1>
+                </a>
+                <div class = "header__subdiv">
+                    <a href ="#page-intro-section" class ="header__link">
+                        <h2 class = "header__subtitle">Intro</h2>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--About Me Section-->
+        <section class ="Page__Intro" id = "page-intro-section" style = "margin-top: 75px;">
+            <div>
+                <h2 class = section__title--page>PyGame Multiplayer Demo</h2>
+                <p class = "section__text">Created as part of a university assignment, this project utilises Python, Pygame, and SQLite 3. </p>
+                <p class = "section__text">Gameplay is very simple, the player must jump ontop of the other player to steal a point from them, as this project was meant more to explore networking and client/server relationships there is very minimal game design, lacking even the simplest win/fail conditions. </p>
+                <p class = "section__text">Players must login using existing valid credentials, with the program closing after a certain amount of failed attempts. Username and Passwords exist in an SQL database, with passwords being hashed with Python's Hashlib library. </p>
+                <p class = "section__text">The database can be managed by a simple terminal script, with the option to create users from the testdata template, as well as adding and removing users manually. </p>
+                <p class = "section__text">If I were to do this again, I would like to write cleaner, more robust code, as well as create some GUI for the Login and Database management systems. It also appears that the client/server code only works locally, which is an issue I did not fix during the initial assignment and would feel dishonest to repair now. </p>
+                <p class = "section__text">- Please Note: The code for this has been temporarily removed from my GitHub and will be returned shortly. </p>
+        </section>
+        <center>
+            <h2 class = section__title>Demonstration</h2>
+            <video title = "Pygame Demo" width="854" height="480" controls class ="promo__video promo-child">
+                <source src="VIDEOS/Pygame Clip.mp4" type="video/mp4">
+            </video>
+        </center>
+        <section class="portfolio" id="Screenshots">
+            <div class = "section__background"></div>
+                <h2 class = section__title>Screenshots</h2>
+                <div class ="portfolio-div">
+                    <a href ="IMG/Pygame Screenshots/Pygame database.png" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Pygame Screenshots/Pygame database.png" alt ="" class ="portfolio__img"><p>Database Master/Editor</p>
+                    </a>
+                    <a href ="IMG/Pygame Screenshots/Pygame Login.png" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Pygame Screenshots/Pygame Login.png" alt ="" class ="portfolio__img"><p>Login</p>
+                    </a>
+                    <a href ="IMG/Pygame Screenshots/Pygame Server.png" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Pygame Screenshots/Pygame Server.png" alt ="" class ="portfolio__img"><p>Server</p>
+                    </a>
+                    <a href ="IMG/Pygame Screenshots/Pygame Game.png" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Pygame Screenshots/Pygame Game.png" alt ="" class ="portfolio__img"><p>Gameplay</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class ="footer">
+            <ul class="socials"> 
+                <li class = "social__item">
+                    <a class="social_link" href = "mailto:CallumHemingway2002@Outlook.com">
+                        Email Me
+                    </a>
+                </li>
+                <li class = "social__item">
+                    <a class="social_link" href = "https://github.com/CalHemingway/">
+                        <i class ="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class = "social__item">
+                    <a class="social_link" href = "https://www.linkedin.com/in/callum-hemingway-5ba931168/">
+                        <i class ="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class = "social__item">
+                    <a class="social_link" href = "https://steamcommunity.com/profiles/76561198094002327/">
+                        <i class ="fab fa-steam"></i>
+                    </a>
+                </li>
+                <li class = "social__item">
+                    <a class="social_link" href = "https://calhemingway.itch.io/">
+                        <i class ="fab fa-itch-io"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
