@@ -39,7 +39,7 @@
             <div>
                 <p class = "section__text">Note from Cal: Hi! I know this page is really long but i'd encourage you to atleast skim the entire thing, a lot of effort went into this project and I believe it shows! <3 </p>
                 <section class ="Splat__Promo promo-container" id = "home" style = "margin-top: 50px;"">
-                    <video title = "Splat! Promo" width="854" height="480" controls class ="promo__video promo-child">
+                    <video title = "Splat! Promo" width="854" height="480" controls class ="promo__video promo-child" style = "border-radius: 25px; padding:5px; background-color: var(--clr-light);">
                         <source src="VIDEOS/Splat_Promo_Vid.mp4" type="video/mp4">
                     </video>
                     <div class = "promo-child">
@@ -62,16 +62,25 @@
                 <h2 class = section__title>User Interface (Built with Common UI)</h2>
                 <p class = "section__text">A lot of effort was put into making sure the UI for the game was as good as it could be. To accomplish this I used Unreal's built-in "Common UI" plugin for the first time.</p>
                 <p class = "section__text">All menus are activatable widgets, using custom animated buttons as well as some additional effects (pulsing text, etc.)</p>
-                
+                <h2 class = section__title>Menus</h2>
+                <p class = "section__text">I can't quite describe how much pride I take in Splat's main menu, it is by far my favourite interface I've designed. Not only does it have a exciting dynamic background featuring both Playable characters in animated scenarios, it opens with a unique, eye catching sequence that lets you know the tone of the game immediately.</p>
+                <p class = "section__text">The Main Menu changes depending on whether or not you have completed a level, if you have you wil have Level Select unlocked and avaialbe, if you haven't then the button will not appear. Clicking the "Play" button from the main menu will lead you directly into the map following the map you last completed.</p>
+                <p class = "section__text">the Level Select menu itself features a scrolling interface, with buttons for each level being dynamcally added once you complete them, when hovering over a level button in the menu a Stats pop up screen will appear next to it showing you your best time and the amount of times you failed during that run.</p>
+                <center>
+                    <video title = "Splat! Menu" width="854" height="480" controls style = "border-radius: 25px; padding:5px; background-color: var(--clr-light);">
+                        <source src="VIDEOS/Splat_Menu_Clip.mp4" type="video/mp4">
+                    </video>
+                    <p class = "section__text" style="text-align: center";>Splat! Opening Sequence</p>
+                </center>
                 <div class ="portfolio-div">
-                    <a href ="IMG/Splat Screenshots/Pause_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Pause_1.jpg" alt ="" class ="portfolio__img"><p>Pause</p>
-                    </a>
                     <a href ="IMG/Splat Screenshots/Main_Menu_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Main_Menu_1.jpg" alt ="" class ="portfolio__img"><p>Main Menu</p>
                     </a>
                     <a href ="IMG/Splat Screenshots/Level_Select_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Level_Select_1.jpg" alt ="" class ="portfolio__img"><p>Level Select</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Pause_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Pause_1.jpg" alt ="" class ="portfolio__img"><p>Pause</p>
                     </a>
                     <a href ="IMG/Splat Screenshots/Quit_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Quit_1.jpg" alt ="" class ="portfolio__img"><p>Quit when on the Title Screen</p>
@@ -79,6 +88,16 @@
                     <a href ="IMG/Splat Screenshots/Quit_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Quit_2.jpg" alt ="" class ="portfolio__img"><p>Quit when in Game</p>
                     </a>
+                    <a href ="IMG/Splat Screenshots/Level_Complete_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Level_Complete_1.jpg" alt ="" class ="portfolio__img"><p>Level Completed Interface</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Level_Fail_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Level_Fail_1.jpg" alt ="" class ="portfolio__img"><p>Level Failed Interface</p>
+                    </a>
+                </div>
+                <p class = "section__text">Quitting the game from within or without the Main Menu will yeild different results, if you are not in the main menu a "Quit to Title" button will appear alongside the "Quit to Desktop" button, if you are in the Main Menu then this button will not appear, a similar function adds or removes the scrolling egg background from menus depending on whether or not you are in the Main Menu.</p>
+                <h2 class = section__title>Heads Up Display</h2>
+                <div class ="portfolio-div">
                     <a href ="IMG/Splat Screenshots/HUD_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/HUD_1.jpg" alt ="" class ="portfolio__img"><p>Gameplay HUD & Countdown Timer</p>
                     </a>
@@ -99,12 +118,6 @@
                     </a>
                     <a href ="IMG/Splat Screenshots/Control_PopUp_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Control_PopUp_2.jpg" alt ="" class ="portfolio__img"><p>Controls Pop Up (Controller)</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Level_Complete_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Level_Complete_1.jpg" alt ="" class ="portfolio__img"><p>Level Completed Interface</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Level_Fail_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Level_Fail_1.jpg" alt ="" class ="portfolio__img"><p>Level Failed Interface</p>
                     </a>
                 </div>
                 <h2 class = section__title>Settings</h2>
