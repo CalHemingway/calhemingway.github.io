@@ -25,6 +25,9 @@
                     <a href ="#page-intro-section" class ="header__link">
                         <h2 class = "header__subtitle">Intro</h2>
                     </a>
+                    <a href ="#ui-section" class ="header__link">
+                        <h2 class = "header__subtitle">User Interface</h2>
+                    </a>
                     <a href ="https://store.steampowered.com/app/2680370/Splat/" class ="header__link">
                         <h2 class = "header__subtitle" stlye = "margin-left: 1.5em; margin-right: 1.5em;">Splat! on Steam</h2>
                     </a>
@@ -32,17 +35,34 @@
             </div>
         </header>
         <!--About Me Section-->
-        <section class ="Page__Intro" id = "page-intro-section" style = "margin-top: 75px;">
+        <section class ="Page__Intro" id = "page-intro-section" style = "margin-top: 85px;">
             <div>
-                <h2 class = section__title--page>Splat</h2>
-                <p class = "section__text">Splat! is a third person gravity based game where you fall through a series of increasingly complex levels, trying to reach the end without going Splat!</p>
+                <p class = "section__text">Note from Cal: Hi! I know this page is really long but i'd encourage you to atleast skim the entire thing, a lot of effort went into this project and I believe it shows! <3 </p>
+                <section class ="Splat__Promo promo-container" id = "home" style = "margin-top: 50px;"">
+                    <video title = "Splat! Promo" width="854" height="480" controls class ="promo__video promo-child">
+                        <source src="VIDEOS/Splat_Promo_Vid.mp4" type="video/mp4">
+                    </video>
+                    <div class = "promo-child">
+                        <img src = "IMG/Splat Logo Full.png" class = "promo__logo">
+                        <p class = "promo__text">Splat! is a third person gravity based game where you fall through a series of increasingly complex levels, trying to reach the end without going Splat!</p>
+                        <a href = "https://store.steampowered.com/app/2680370/Splat/" class= "promo__link">
+                            <h3 class = "promo__link">> Get Splat! on Steam NOW!</h3>
+                        </a>
+                    </div>
+                </section>
+                <p></p>
+                <p></p>
                 <p class = "section__text">Developed for PC, Splat! is the second game I have released to Steam, with part-time development beginning at the start of November and finishing/releasing in Mid-January, this game was developed with a very short turnaround.</p>
                 <p class = "section__text">The game was developed with Unreal Engine 5.2.1 (later upgraded to 5.3.2) and uses my CommonUI Menu Pack developed for the purpose of saving myself time in future projects. All assets in the game (aside from sound effects and music) were created by myself soley for use in this game. </p>
+            </div> 
         </section>
 
         <section class="portfolio" id="ui-section">
             <div class = "section__background"></div>
                 <h2 class = section__title>User Interface (Built with Common UI)</h2>
+                <p class = "section__text">A lot of effort was put into making sure the UI for the game was as good as it could be. To accomplish this I used Unreal's built-in "Common UI" plugin for the first time.</p>
+                <p class = "section__text">All menus are activatable widgets, using custom animated buttons as well as some additional effects (pulsing text, etc.)</p>
+                
                 <div class ="portfolio-div">
                     <a href ="IMG/Splat Screenshots/Pause_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Pause_1.jpg" alt ="" class ="portfolio__img"><p>Pause</p>
@@ -52,24 +72,6 @@
                     </a>
                     <a href ="IMG/Splat Screenshots/Level_Select_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Level_Select_1.jpg" alt ="" class ="portfolio__img"><p>Level Select</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Options_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Options_1.jpg" alt ="" class ="portfolio__img"><p>Options</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Options_2.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Options_2.jpg"" alt ="" class ="portfolio__img"><p>Choosing Resolution</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" alt ="" class ="portfolio__img"><p>Confirming Resolution/Window Mode Changes</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Options_3.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Options_3.jpg"" alt ="" class ="portfolio__img"><p>Windowed Fullscreen Disables Resolution</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Quality_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Quality_1.jpg" alt ="" class ="portfolio__img"><p>Quality Settings</p>
-                    </a>
-                    <a href ="IMG/Splat Screenshots/Quality_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
-                        <img src="IMG/Splat Screenshots/Quality_2.jpg" alt ="" class ="portfolio__img"><p>Allows for Custom Settings</p>
                     </a>
                     <a href ="IMG/Splat Screenshots/Quit_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
                         <img src="IMG/Splat Screenshots/Quit_1.jpg" alt ="" class ="portfolio__img"><p>Quit when on the Title Screen</p>
@@ -105,6 +107,36 @@
                         <img src="IMG/Splat Screenshots/Level_Fail_1.jpg" alt ="" class ="portfolio__img"><p>Level Failed Interface</p>
                     </a>
                 </div>
+                <h2 class = section__title>Settings</h2>
+                <p class = "section__text">Settings such as quality, resolution and volume are not only stored in the GameUserSettings ini file but also have an additional Save Game class, which overrides the GameUserSettings to ensure that the user's chosen settings do not change unless the user changes them, this also serves as a backup in case the game crashes during settings changes (changes are only saved AFTER the user confirms them.)</p>
+                <p class = "section__text">Changing Resolution or Screen Mode (Fullscreen, Windowed, Borderless Windowed) are the most common problem points when changing settings, as such a timeout confirmation screen appears after these settings have been altered, where the user only has a set amount of time to confirm the settings before the revert, giving a much needed safety net to these settings.</p>
+                <div class ="portfolio-div">
+                    <a href ="IMG/Splat Screenshots/Options_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_1.jpg" alt ="" class ="portfolio__img"><p>Options</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_2.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_2.jpg"" alt ="" class ="portfolio__img"><p>Choosing Resolution</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Confirm_Changes_1.jpg"" alt ="" class ="portfolio__img"><p>Confirming Resolution/Window Mode Changes</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_3.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_3.jpg"" alt ="" class ="portfolio__img"><p>Windowed Fullscreen Disables Resolution</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quality_1.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quality_1.jpg" alt ="" class ="portfolio__img"><p>Quality Settings</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Quality_2.jpg" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Quality_2.jpg" alt ="" class ="portfolio__img"><p>Allows for Custom Settings</p>
+                    </a>
+                    <a href ="IMG/Splat Screenshots/Options_4.jpg"" class ="portfolio__item"><p style = "font-size: 0.9rem;">Click To Open</p>
+                        <img src="IMG/Splat Screenshots/Options_4.jpg"" alt ="" class ="portfolio__img"><p>Clear saves button added in Patch</p>
+                    </a>
+                </div>
+                <p class = "section__text">When iterating between resolutions, all other options buttons are disabled (due to them saving settings changes when clicked.) </p>
+                <p class = "section__text">A lesser known fact about changing Screenmodes in Unreal is that selecting Windowed Fullscreen automatically sets the screen resolution to your monitors native size, overridng any changes youve made to the resolution. Rather than try and work around this I made the decision to disable the resolution button whilst in Windowed Fullscreen mode, this makes it clear to the user that the resolution can no longer be changed.</p>
+                <p class = "section__text">Whilst Unreal does have a built in volume slider, this does not behave in the same way the CommonUI buttons work, for instance whilst CommonUI buttons can change colour and size by simple Hover/UnHover events, I had to tie multiple different events such as On Mouse Capture (Begin/End), On Controller Capture (Begin/End), and On Added/Removed from Focus Path to create my own Hover/Unhover events for the slider, I also manually set focus when hovered to ensure that the controller is positioned on the correct item should the player switch to it.
+                <p class = "section__text">PATCH v1.1 CHANGE: Following Splat!'s Steam Release, a user reported a bug that they ultimately solved themselves by clearing saves, after I patched this bug with the help of their feedback, I realised that the game did not have an option to Clear Saves within the game itself, I rectified this by including a "Clear Saves" button in the options menu.
             </div>
         </section>
         <!--Footer-->
